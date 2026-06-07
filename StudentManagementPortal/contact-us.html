@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar (Mandatory) + Collapse -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="../images/cvrlogo.jpg" width="70" height="70" class="d-inline-block" alt="CVR logo">
+        <span class="ms-2 fw-semibold">College Contact</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./student-registration.html">Register</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+              <li><a class="dropdown-item" href="#contactForm">Contact Form</a></li>
+              <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./student-dashboard.html">Dashboard</a></li>
+        </ul>
+
+        <button class="btn btn-primary ms-lg-3" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">
+          Quick Info
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel (Mandatory) -->
+  <header id="gallery" class="py-4">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <h1 class="h3 fw-bold mb-0">Campus Highlights</h1>
+        <span class="badge text-bg-warning text-dark">Carousel</span>
+      </div>
+
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner rounded overflow-hidden shadow-sm">
+          <div class="carousel-item active">
+            <img src="../images/studReg.jpg" class="d-block w-100" style="height:320px; object-fit:cover;" alt="Student registration">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/attendance.jpg" class="d-block w-100" style="height:320px; object-fit:cover;" alt="Attendance">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/results.jpg" class="d-block w-100" style="height:320px; object-fit:cover;" alt="Results">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Contact Form (2-column on desktop) -->
+        <div class="col-12 col-lg-7">
+          <div class="card shadow-sm" id="contactForm">
+            <div class="card-body p-4">
+              <h2 class="h4 fw-bold">Contact Us</h2>
+              <p class="text-muted">Send your message to the student support desk. Fields marked with * are required.</p>
+
+              <form class="needs-validation" id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="cName" class="form-label">Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cName" name="name" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="cEmail" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="cEmail" name="email" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="cSubject" class="form-label">Subject <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cSubject" name="subject" required>
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="cMessage" class="form-label">Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="cMessage" name="message" rows="5" required></textarea>
+                    <div class="invalid-feedback">Please write your message.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                      <button class="btn btn-primary" type="submit">Send Message</button>
+                      <button class="btn btn-outline-secondary" type="button" id="fillDemo">Fill Demo</button>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div id="contactAlert" class="alert alert-success d-none" role="alert">
+                      Message sent successfully! (Demo page — no backend.)
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-3">
+                  <!-- Collapse (Mandatory) -->
+                  <a class="btn btn-link text-decoration-none p-0" data-bs-toggle="collapse" href="#moreHelp" role="button" aria-expanded="false" aria-controls="moreHelp">
+                    Need more help? Click here.
+                  </a>
+                  <div class="collapse" id="moreHelp">
+                    <div class="card card-body mt-2">
+                      <span class="badge text-bg-info">Support</span>
+                      <p class="mt-2 mb-0">We respond within 24 hours on working days.</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Accordion (Mandatory) -->
+          <div class="accordion mt-4" id="faq">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Admission Queries
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  Use the registration page and contact us for admission schedule details.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Attendance & Results
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  Check your dashboard for attendance badges and ask for corrections if needed.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Placements
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  Placement statistics appear on the student dashboard.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact details + Table -->
+        <div class="col-12 col-lg-5">
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card shadow-sm">
+                <div class="card-body p-4">
+                  <h2 class="h5 fw-bold">Support Desk</h2>
+                  <p class="text-muted">Choose the category and see the contact hours.</p>
+
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge text-bg-primary">Admissions</span>
+                    <span class="badge text-bg-success">Attendance</span>
+                    <span class="badge text-bg-warning text-dark">Placements</span>
+                  </div>
+
+                  <table class="table table-sm align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Hours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Admissions</td>
+                        <td>9:00 - 5:00</td>
+                      </tr>
+                      <tr>
+                        <td>Attendance</td>
+                        <td>10:00 - 4:00</td>
+                      </tr>
+                      <tr>
+                        <td>Placements</td>
+                        <td>11:00 - 3:30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card shadow-sm">
+                <div class="card-body p-4">
+                  <h2 class="h5 fw-bold">Quick Actions</h2>
+                  <p class="text-muted">Use buttons to jump to other pages.</p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-outline-primary" href="./student-dashboard.html">View Dashboard</a>
+                    <a class="btn btn-outline-primary" href="./student-profile.html">Open Profile</a>
+                    <a class="btn btn-primary" href="./student-registration.html">Student Registration</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="alert alert-secondary mb-0" role="alert">
+                <strong>Note:</strong> This is a front-end demo only.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal (Mandatory) -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Quick Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0">For registration, use the <span class="fw-semibold">Register</span> page. For attendance, use the <span class="fw-semibold">Dashboard</span>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
+        <div>
+          <div class="fw-semibold">© <span id="year"></span> FSd FrontEndTasks</div>
+          <div class="text-white-50">All rights reserved.</div>
+        </div>
+        <div class="d-flex gap-3">
+          <a class="text-white-50 text-decoration-none" href="#">Facebook</a>
+          <a class="text-white-50 text-decoration-none" href="#">Twitter</a>
+          <a class="text-white-50 text-decoration-none" href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const contactForm = document.getElementById('contactForm');
+    const contactAlert = document.getElementById('contactAlert');
+    const fillDemo = document.getElementById('fillDemo');
+
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.classList.add('was-validated');
+        contactAlert.classList.add('d-none');
+        return;
+      }
+
+      contactForm.classList.add('was-validated');
+      contactAlert.classList.remove('d-none');
+    });
+
+    fillDemo.addEventListener('click', () => {
+      document.getElementById('cName').value = 'Demo Student';
+      document.getElementById('cEmail').value = 'demo@example.com';
+      document.getElementById('cSubject').value = 'Student Support';
+      document.getElementById('cMessage').value = 'Hello! I need help with my registration.';
+      contactAlert.classList.add('d-none');
+      contactForm.classList.remove('was-validated');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

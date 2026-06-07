@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: grow 3s infinite alternate ease-in-out;
+        }
+        div.a {
+            background-color: green;
+            transform-origin: center center;
+            animation: rotate 4s infinite linear;
+        }
+        div.b {
+            background-color: blue;
+            transform-origin: left bottom;
+            animation: skewAnim 4s infinite alternate ease-in-out;
+        }
+
+        @keyframes grow {
+            from {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            to {
+                width: 150px;
+                height: 150px;
+                background-color: yellow;
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes skewAnim {
+            from { transform: skew(0deg, 0deg); }
+            to { transform: skew(20deg, 20deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>FSD training</h1>
+    <div></div>
+    <br>
+    <div class="a">rotate</div>     <br>
+    <div class="b">skew(20deg, 20deg)</div>
+</body>
+</html>
