@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - College Event Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-calendar-event"></i> College Events
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-danger text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Frequently Asked Questions</h1>
+            <p class="lead">Find answers to common questions about our events</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <!-- FAQ Accordion -->
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How to register for events?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Registering for events is simple and easy:</p>
+                                    <ol>
+                                        <li>Go to the <a href="registration.html" class="text-primary">Registration Page</a></li>
+                                        <li>Fill in your personal details (Name, Roll Number, Branch, Email, Phone)</li>
+                                        <li>Select the events you want to participate in</li>
+                                        <li>Agree to the terms and conditions</li>
+                                        <li>Click "Submit Registration"</li>
+                                        <li>You'll receive a confirmation email with your registration details</li>
+                                    </ol>
+                                    <p class="text-muted mt-2">Note: You can register for multiple events at once.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Is there a registration fee?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Most of our events are <strong>completely free</strong> for all students. However:</p>
+                                    <ul>
+                                        <li><strong>Free Events:</strong> Technical Quiz, Coding Contest, Workshop, Poster Presentation, Gallery viewing</li>
+                                        <li><strong>Paid Events:</strong> Some premium workshops and cultural events may have a nominal fee (₹50-200)</li>
+                                        <li><strong>Hackathon:</strong> Completely free, but limited seats (first come, first served)</li>
+                                    </ul>
+                                    <p class="text-muted mt-2">Fee information is clearly mentioned on each event's details page.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I participate in multiple events?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Yes, absolutely!</strong> You can participate in as many events as you want. However, please note:</p>
+                                    <ul>
+                                        <li>Some events may have <strong>conflicting timings</strong> - check the schedule carefully</li>
+                                        <li>Make sure you don't miss registration deadlines for any event</li>
+                                        <li>Some events have <strong>limited seating capacity</strong> - register early</li>
+                                        <li>You can register for multiple events in a single registration form</li>
+                                    </ul>
+                                    <p class="alert alert-info mt-2">Pro Tip: Visit our <a href="schedule.html" class="text-primary">Schedule Page</a> to avoid timing conflicts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What is the registration deadline?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Registration deadlines vary for each event:</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Event</th>
+                                                    <th>Deadline</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Technical Quiz</td>
+                                                    <td>March 13, 2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hackathon</td>
+                                                    <td>April 1, 2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Coding Contest</td>
+                                                    <td>March 30, 2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cultural Fest</td>
+                                                    <td>April 15, 2024</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="text-danger fw-bold">⏰ Important: Register before the deadline to secure your spot!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How do I get event confirmation?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>After successful registration, you'll receive:</p>
+                                    <ol>
+                                        <li><strong>Confirmation Email:</strong> Sent immediately to your registered email address</li>
+                                        <li><strong>Registration ID:</strong> A unique ID for tracking your registration</li>
+                                        <li><strong>Event Details:</strong> Date, time, venue, and any special instructions</li>
+                                        <li><strong>Reminder Email:</strong> 24 hours before the event</li>
+                                    </ol>
+                                    <div class="alert alert-warning mt-2">
+                                        <strong>Note:</strong> If you don't receive the confirmation email within 5 minutes, check your spam folder or contact us at <strong>events@college.edu</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Can I cancel or modify my registration?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Yes, you can modify your registration:</strong></p>
+                                    <ul>
+                                        <li><strong>Before Event:</strong> You can cancel or modify registration until 24 hours before the event</li>
+                                        <li><strong>Cancellation Process:</strong> Contact the event coordinator or email events@college.edu with your registration ID</li>
+                                        <li><strong>After Event:</strong> No cancellations allowed after the event has started</li>
+                                        <li><strong>Refunds:</strong> If applicable, refunds will be processed within 7 business days</li>
+                                    </ul>
+                                    <p class="text-muted mt-2">For quick cancellation, visit the Contact page and reach out to the event coordinator directly.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    Do I need any specific skills to participate?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Skill requirements depend on the event:</p>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <h6 class="fw-bold">Beginner-Friendly Events:</h6>
+                                            <ul>
+                                                <li>Cultural Fest</li>
+                                                <li>Gallery Viewing</li>
+                                                <li>Workshops</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="fw-bold">Intermediate/Advanced:</h6>
+                                            <ul>
+                                                <li>Coding Contest</li>
+                                                <li>Hackathon</li>
+                                                <li>Technical Quiz</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 text-info">✓ Don't worry if you're a beginner - many events welcome all skill levels. Choose events that match your interests!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                    How are prizes distributed?
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Prize Distribution Details:</strong></p>
+                                    <div class="alert alert-success">
+                                        <h6 class="fw-bold mb-2">General Prize Structure:</h6>
+                                        <ul class="mb-0">
+                                            <li>🥇 <strong>1st Prize:</strong> Certificate + Trophy + Cash Award</li>
+                                            <li>🥈 <strong>2nd Prize:</strong> Certificate + Trophy + Cash Award</li>
+                                            <li>🥉 <strong>3rd Prize:</strong> Certificate + Trophy + Cash Award</li>
+                                            <li>👥 <strong>Participation:</strong> Certificate for all participants</li>
+                                        </ul>
+                                    </div>
+                                    <p>Specific prize amounts for each event will be mentioned on the event details page. Awards are distributed immediately after the event or during the award ceremony.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 9 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                                    What should I bring to the event?
+                                </button>
+                            </h2>
+                            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Essential Items to Bring:</strong></p>
+                                    <ul>
+                                        <li>📋 <strong>Valid ID Proof:</strong> Student ID or admission card</li>
+                                        <li>📧 <strong>Registration Confirmation:</strong> Email or printed copy</li>
+                                        <li>🖊️ <strong>Stationery:</strong> Pen and notebook (for some events)</li>
+                                        <li>💻 <strong>Laptop:</strong> For Hackathon and Coding events</li>
+                                        <li>💧 <strong>Water Bottle:</strong> Stay hydrated</li>
+                                    </ul>
+                                    <p class="text-muted mt-3">Specific requirements for each event will be mentioned in the confirmation email.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 10 -->
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                                    Still have questions?
+                                </button>
+                            </h2>
+                            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>If you couldn't find the answer to your question, we're here to help!</p>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6 mb-3">
+                                            <h6 class="fw-bold">📧 Email Us:</h6>
+                                            <p><a href="mailto:events@college.edu" class="text-primary">events@college.edu</a></p>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <h6 class="fw-bold">📞 Call Us:</h6>
+                                            <p><a href="tel:+15551234567" class="text-primary">+1 (555) 123-4567</a></p>
+                                        </div>
+                                    </div>
+                                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact CTA -->
+                    <div class="alert alert-info mt-5" role="alert">
+                        <h5 class="fw-bold mb-2">Need More Help?</h5>
+                        <p class="mb-0">Visit our <a href="contact.html" class="text-primary">Contact Page</a> to reach out to the event coordinators directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>Your gateway to amazing college events and opportunities</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="events.html" class="text-white-50 text-decoration-none">Events</a></li>
+                        <li><a href="registration.html" class="text-white-50 text-decoration-none">Register</a></li>
+                        <li><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5>
+                    <p class="text-white-50">
+                        Email: events@college.edu<br>
+                        Phone: +1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2024 College Event Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - College Event Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-calendar-event"></i> College Events
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-success text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Event Registration</h1>
+            <p class="lead">Register for exciting college events</p>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-5">
+                            <h3 class="card-title mb-4 fw-bold">Registration Form</h3>
+                            
+                            <div class="alert alert-info" role="alert">
+                                <strong>Note:</strong> All fields marked with <span class="text-danger">*</span> are required.
+                            </div>
+
+                            <form id="registrationForm" novalidate>
+                                <!-- Student Name -->
+                                <div class="mb-3">
+                                    <label for="studentName" class="form-label">Student Name <span class="text-danger">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        id="studentName" 
+                                        name="studentName"
+                                        placeholder="Enter your full name"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid name.
+                                    </div>
+                                </div>
+
+                                <!-- Roll Number -->
+                                <div class="mb-3">
+                                    <label for="rollNumber" class="form-label">Roll Number <span class="text-danger">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        id="rollNumber" 
+                                        name="rollNumber"
+                                        placeholder="e.g., CS101"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid roll number.
+                                    </div>
+                                </div>
+
+                                <!-- Branch -->
+                                <div class="mb-3">
+                                    <label for="branch" class="form-label">Branch <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="branch" name="branch" required>
+                                        <option value="">Select your branch</option>
+                                        <option value="CSE">Computer Science & Engineering</option>
+                                        <option value="ECE">Electronics & Communication Engineering</option>
+                                        <option value="ME">Mechanical Engineering</option>
+                                        <option value="CIVIL">Civil Engineering</option>
+                                        <option value="EE">Electrical Engineering</option>
+                                        <option value="IT">Information Technology</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a branch.
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input 
+                                        type="email" 
+                                        class="form-control" 
+                                        id="email" 
+                                        name="email"
+                                        placeholder="your.email@college.edu"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Number -->
+                                <div class="mb-3">
+                                    <label for="mobileNumber" class="form-label">Mobile Number <span class="text-danger">*</span></label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        id="mobileNumber" 
+                                        name="mobileNumber"
+                                        placeholder="+91 9876543210"
+                                        pattern="[0-9+\-\s]{10,}"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid 10-digit mobile number.
+                                    </div>
+                                </div>
+
+                                <!-- Event Selection -->
+                                <div class="mb-4">
+                                    <label class="form-label">Select Events <span class="text-danger">*</span></label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="event1" name="events" value="Technical Quiz">
+                                                <label class="form-check-label" for="event1">
+                                                    Technical Quiz
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="event2" name="events" value="Hackathon">
+                                                <label class="form-check-label" for="event2">
+                                                    Hackathon
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="event3" name="events" value="Poster Presentation">
+                                                <label class="form-check-label" for="event3">
+                                                    Poster Presentation
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="event4" name="events" value="Coding Contest">
+                                                <label class="form-check-label" for="event4">
+                                                    Coding Contest
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="event5" name="events" value="Project Expo">
+                                                <label class="form-check-label" for="event5">
+                                                    Project Expo
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="event6" name="events" value="Cultural Fest">
+                                                <label class="form-check-label" for="event6">
+                                                    Cultural Fest
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invalid-feedback d-block" id="eventError">
+                                        Please select at least one event.
+                                    </div>
+                                </div>
+
+                                <!-- Terms & Conditions -->
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the terms and conditions <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree to the terms and conditions.
+                                    </div>
+                                </div>
+
+                                <!-- Buttons -->
+                                <div class="d-grid gap-2 d-md-flex">
+                                    <button type="submit" class="btn btn-success btn-lg flex-fill">
+                                        Submit Registration
+                                    </button>
+                                    <button type="reset" class="btn btn-secondary btn-lg flex-fill">
+                                        Clear Form
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Alert (Hidden by default) -->
+    <div id="successAlert" class="alert alert-success alert-dismissible fade show d-none" role="alert" style="position: fixed; top: 80px; right: 20px; z-index: 9999; min-width: 300px;">
+        <h4 class="alert-heading">Success!</h4>
+        <p>Thank you for registering. You will receive a confirmation email at <strong id="confirmEmail"></strong></p>
+        <p class="mb-0">Registration successful! You have registered for the following events:</p>
+        <ul id="registeredEvents" class="mb-0 mt-2"></ul>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>Your gateway to amazing college events and opportunities</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="events.html" class="text-white-50 text-decoration-none">Events</a></li>
+                        <li><a href="registration.html" class="text-white-50 text-decoration-none">Register</a></li>
+                        <li><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5>
+                    <p class="text-white-50">
+                        Email: events@college.edu<br>
+                        Phone: +1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2024 College Event Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
