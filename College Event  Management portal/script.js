@@ -127,13 +127,13 @@ function handleContactSubmit(e) {
     const contactEmail = formData.get('contactEmail');
     const subject = formData.get('subject');
     const message = formData.get('message');
-    localStorage.setItem('contactFormData', JSON.stringify({
+    sessionStorage.setItem('contactFormData', JSON.stringify({
         name: contactName,
         email: contactEmail,
         subject: subject,
         message: message
     }));
-    let contactFormData=localStorage.getItem('contactFormData');
+    let contactFormData=sessionStorage.getItem('contactFormData');
 
     // Log contact data
     console.log(JSON.parse(contactFormData));
