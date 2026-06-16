@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Siddartha",
+    "email": "sid@gmail.com",
+    "city": "Nanakramguda",
+    "id": 6
+  },
+  {
+    "name": "Sharma",
+    "email": "sharma@gmail.com",
+    "city": "Bandlaguda",
+    "id": 7
+  },
+  {
+    "name": "ram",
+    "email": "ram@gmail.com",
+    "city": "uppal",
+    "id": 8
+  },
+  {
+    "name": "owaisi",
+    "email": "owaisi@gmail.com",
+    "city": "darussalam",
+    "id": 9
+  },
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "city": "Hyderabad"
+  },
+  {
+    "id": 2,
+    "name": "Priya Reddy",
+    "email": "priya@example.com",
+    "city": "Bangalore"
+  },
+  {
+    "id": 3,
+    "name": "Arjun Kumar",
+    "email": "arjun@example.com",
+    "city": "Chennai"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Patel",
+    "email": "sneha@example.com",
+    "city": "Mumbai"
+  }
+]
